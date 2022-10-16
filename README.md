@@ -25,3 +25,32 @@
     cout << a << " " << b << " " << c << endl;
   
 ```
+
+### Switch statements to find longest, mid, and shortest sides of triangle as long as it is a triangle.
+- see code snippet below
+
+```
+if ((a <= 0) || (b <= 0) || (c <= 0)) {
+        cout << "This is not a triangle." << endl;
+    } else {
+        if ((a + b <= c) || (a + c <= b) || (b + c <= a)) {
+            cout << "This is not a triangle." << endl;
+        } else {
+            longest = c;
+            if (longest < a) {
+                c = longest;
+                longest = a;
+                a = c;
+            } else if (longest < b) {
+                c = longest;
+                longest = b;
+                b = c;
+            }
+            mid = b;
+            if (mid < a) {
+                b = mid;
+                mid = a;
+                a = b;
+            }
+            shortest = a;
+```
