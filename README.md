@@ -54,3 +54,5 @@ if ((a <= 0) || (b <= 0) || (c <= 0)) {
             }
             shortest = a;
 ```
+- Emily Holt
+- [LinkedIn](https://www.linkedin.com/in/emily-holt-bb70b8161/)
